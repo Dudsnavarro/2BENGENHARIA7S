@@ -1,4 +1,7 @@
 package com.example.Trab_ArquiteturaDeSoftware.Repository;
 
-public interface EnderecoRepository {
+import com.example.Trab_ArquiteturaDeSoftware.Model.EnderecoModel;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface EnderecoRepository extends JpaRepository<EnderecoModel, Long> {
 }
