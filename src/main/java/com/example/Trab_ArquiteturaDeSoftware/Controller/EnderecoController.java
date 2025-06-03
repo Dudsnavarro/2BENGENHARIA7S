@@ -1,5 +1,6 @@
 package com.example.Trab_ArquiteturaDeSoftware.Controller;
 
+import com.example.Trab_ArquiteturaDeSoftware.DTO.EnderecoDTO;
 import com.example.Trab_ArquiteturaDeSoftware.Model.EnderecoModel;
 import com.example.Trab_ArquiteturaDeSoftware.Service.EnderecoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,8 +21,10 @@ public class EnderecoController {
     private EnderecoService enderecoService;
 
     @GetMapping
-    public List<EnderecoModel> listarEnderecos() {
-        return enderecoService.findAll();
+    public List<EnderecoDTO> listarEnderecos() {
+        return enderecoService.findAll().stream()
+                .map(EnderecoDTO::fromEntity)
+                .collect(Collectors.toList());
     }
 
     @PostMapping
