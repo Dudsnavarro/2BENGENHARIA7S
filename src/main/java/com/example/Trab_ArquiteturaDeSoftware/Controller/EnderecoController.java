@@ -14,7 +14,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping(path = "/enderecos")
+@RequestMapping(path = "/api/enderecos")
+@CrossOrigin(origins = "*")
 public class EnderecoController {
 
     @Autowired
