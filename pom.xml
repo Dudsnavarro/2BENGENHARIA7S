@@ -5,6 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
+<<<<<<< HEAD
 		<version>3.5.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
@@ -12,6 +13,15 @@
 	<artifactId>demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>demo</name>
+=======
+		<version>3.4.5</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.example</groupId>
+	<artifactId>Trab-ArquiteturaDeSoftware</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Trab-ArquiteturaDeSoftware</name>
+>>>>>>> 1e34944342792722da8d5f6be7370aeaa2a75c49
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -36,10 +46,13 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+<<<<<<< HEAD
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+=======
+>>>>>>> 1e34944342792722da8d5f6be7370aeaa2a75c49
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
@@ -53,11 +66,14 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<<<<<<< HEAD
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+=======
+>>>>>>> 1e34944342792722da8d5f6be7370aeaa2a75c49
 	</dependencies>
 
 	<build>
